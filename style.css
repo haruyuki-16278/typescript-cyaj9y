@@ -1,0 +1,9 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
