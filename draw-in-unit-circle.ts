@@ -44,7 +44,7 @@ export default class DrawInUnitCircle {
     this.context.lineTo(this.width, this.height / 2);
     this.context.closePath();
     this.context.stroke();
-    
+
     this.context.beginPath();
     this.context.moveTo(this.width / 2, 0);
     this.context.lineTo(this.width / 2, this.height);
@@ -71,12 +71,12 @@ export default class DrawInUnitCircle {
       });
     }
 
-    this.init()
+    this.init();
 
     this.locus.forEach((v, i, a) => {
       if (i === a.length - 1) return;
 
-      this.context.strokeStyle = `rgb(${(100 / a.length) * i + 155}, 0, 0)`;
+      this.context.strokeStyle = `rgba(255, 0, 0, ${i / (a.length - 1)})`;
       this.context.lineWidth = 1;
       this.context.beginPath();
       this.context.moveTo(v.x, v.y);
