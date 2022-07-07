@@ -17,12 +17,12 @@ import DrawInUnitCircle, { NormalizedCoordinates } from './draw-in-unit-circle';
 
   console.log('ready');
 
-  // window.setInterval(() => {
-  //   const nc: NormalizedCoordinates = {
-  //     x: Math.random() * 2 - 1,
-  //     y: Math.random() * 2 - 1
-  //   }
-  //   console.log(nc)
-  //   drawInUnitCircle.plot(nc)
-  // }, 100)
+  window.setInterval(() => {
+    const nc: NormalizedCoordinates = {
+      x: Math.random() * 2 - 1,
+      y: Math.random() * 2 - 1,
+    };
+    console.log(nc);
+    drawInUnitCircle.plot(nc);
+  }, 1000);
 })();
